@@ -1,0 +1,36 @@
+version: '3.7'
+
+services:
+  mysql-db:
+    image: mysql:8.0.23
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes:
+      - mysql-db-v:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: <INSERT_PASSWORD>
+    ports:
+      - 3306:3306
+
+  mysql-workbench:
+    image: ghcr.io/linuxserver/mysql-workbench:version-8.0.23
+    container_name: mysql-workbench
+    volumes:
+      - mysql-workbench-v:/config
+    environment:
+      - TZ=Australia/Sydney
+    ports:
+      - 3000:3000
+    cap_add:
+      - IPC_LOCK
+    restart: unless-stopped
+
+  adminer:
+    image: adminer:4.8.0
+    restart: always
+    ports:
+      - 8080:8080
+
+volumes:
+  mysql-db-v:
+  mysql-workbench-v:
