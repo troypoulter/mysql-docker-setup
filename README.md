@@ -14,7 +14,7 @@ If you'd prefer to download these or other tools directly and run them not via D
 
 ## Pre-reqs
 
-- Docker v18.06.0+ - [Docker install link](https://www.docker.com/products/docker-desktop)
+- Docker v18.06.0+ - You can download Docker by [following this link](https://www.docker.com/products/docker-desktop)
 
 ## Setting it up
 
