@@ -22,7 +22,7 @@ If you'd prefer to download these or other tools directly and run them not via D
 
 ### Starting the services
 
-1. Start up your favourite `cmd` tool and navigate to this folder.
+1. Start up your favourite `cmd` tool, clone down this repository and open up this folder.
 2. Open up `docker-compose.yml` in your favourite text editor and update `MYSQL_ROOT_PASSWORD` with an appropiate password.
 3. Run this command to start up the services.
 
