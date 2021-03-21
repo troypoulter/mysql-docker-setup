@@ -1,3 +1,5 @@
+![MySQL + Docker](logo.svg)
+
 # A simple MySQL local setup using Docker
 
 This guide will walk you through a simple process to start up a local MySQL setup in no time using Docker!
